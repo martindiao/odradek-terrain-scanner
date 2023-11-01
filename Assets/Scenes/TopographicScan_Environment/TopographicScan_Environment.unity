@@ -3756,6 +3756,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6853915746771586054, guid: c796b67f4e0589e4aa529d55962dd76a,
         type: 3}
+      propertyPath: distance
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853915746771586054, guid: c796b67f4e0589e4aa529d55962dd76a,
+        type: 3}
       propertyPath: duration
       value: 2
       objectReference: {fileID: 0}
@@ -3764,6 +3769,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6853915746771586054, guid: c796b67f4e0589e4aa529d55962dd76a,
+        type: 3}
+      propertyPath: player_cam
+      value: 
+      objectReference: {fileID: 851605830}
     - target: {fileID: 6853915746771586054, guid: c796b67f4e0589e4aa529d55962dd76a,
         type: 3}
       propertyPath: fadeDuration
@@ -4801,6 +4811,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcfb5762514ba154aabea84d5528488e, type: 3}
+--- !u!1 &851605830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1708968921}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &859249089 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7829927797978050335, guid: 423ee91c22c598d40aa7ee3a0fad568d,

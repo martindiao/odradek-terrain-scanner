@@ -8,6 +8,9 @@ using UnityEngine.Experimental.Rendering;
 
 public class ScannerHDRP : MonoBehaviour
 {
+    [SerializeField]
+    GameObject player_cam;
+
     [Header("Binding")]
     [SerializeField]
     private ReplacementPass m_ReplacementPass;
@@ -116,6 +119,10 @@ public class ScannerHDRP : MonoBehaviour
             coroutineTime += Time.deltaTime;
             yield return null;
         }
+
+        transform.position = player_cam.transform.position;
+        transform.rotation = Quaternion.Euler(new Vector3(0f, player_cam.transform.rotation.eulerAngles.y, 0f));
+
         m_ReplacementPass.renderCamera.enabled = true;
         m_ReplacementPass.onRenderEnd.AddListener(PlayVFX);
     }
